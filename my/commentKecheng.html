@@ -1,0 +1,241 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <title>trainSys</title>
+  <link rel="icon" type="image/png" href="../assets/i/favicon.png">
+  <link rel="stylesheet" href="../assets/css/amazeui.min.css">
+
+  <link rel="stylesheet" href="../assets/css/common.css">
+</head>
+
+<script src="../assets/js/jquery.min.js"></script>
+<script src='../assets/js/handlebars.min.js'></script>
+<script src='../assets/js/amazeui.widgets.helper.min.js'></script>
+
+<body>
+  <!-- header -->
+  <div class="header am-text-lg am-text-center">
+    <span class="am-icon-chevron-left am-fl left-btn"></span>
+    当前培训的名称
+    
+  </div>
+
+  <div class="commentKecheng_wrap mt60">
+    <!-- banner -->
+    <div class="am-g">
+      <img src="http://s.amazeui.org/media/i/demos/bw-2014-06-19.jpg" class="am-img-responsive" width=100% alt="培训图片"/>
+    </div>
+    <!-- address -->
+    <div class="am-cf my_address">
+      <div class=" am-fl col6">xxx培训班</div>
+    </div>
+
+
+    <!-- 培训信息 -->
+    <div class="am-container">
+      <div> 
+        <h6 class='am-margin-bottom-xs am-text-sm'>课程：</h6>
+        <!-- 课程 -->
+        <div class=' am-form'>
+          <div class="am-panel am-panel-default">
+            <div class="am-panel-bd">
+              <div class='am-text-sm am-cf'><span>1.</span>您对本门课程的整体满意程度
+              </div>
+              <div class='am-text-sm am-margin-top-sm'>
+                <span class='am-margin-right'><input type="radio" name='01' id='011'><label for='011' class='am-text-success'>非常满意</label></span>
+                <span class='am-margin-right'><input type="radio" name='01'  id='012'><label for='012' class='am-text-warning'>满意</label></span>
+                <span class='am-margin-right'><input type="radio" name='01'  id='013'><label for='013' class='am-text-danger'>不满意</label></span>
+              </div>
+            </div>
+          </div>
+          <div class="am-panel am-panel-default">
+            <div class="am-panel-bd">
+              <div class='am-text-sm am-cf'><span>2.</span>课程的内容
+              </div>
+              <div class='am-text-sm am-margin-top-sm'>
+                <span class='am-margin-right'><input type="radio" name='01' id='011'><label for='011' class='am-text-success'>非常满意</label></span>
+                <span class='am-margin-right'><input type="radio" name='01'  id='012'><label for='012' class='am-text-warning'>满意</label></span>
+                <span class='am-margin-right'><input type="radio" name='01'  id='013'><label for='013' class='am-text-danger'>不满意</label></span>
+              </div>
+            </div>
+          </div>
+          <div class="am-panel am-panel-default">
+            <div class="am-panel-bd">
+              <div class='am-text-sm am-cf'><span>3.</span>对授课时间的安排
+              </div>
+              <div class='am-text-sm am-margin-top-sm'>
+                <span class='am-margin-right'><input type="radio" name='01' id='011'><label for='011' class='am-text-success'>非常满意</label></span>
+                <span class='am-margin-right'><input type="radio" name='01'  id='012'><label for='012' class='am-text-warning'>满意</label></span>
+                <span class='am-margin-right'><input type="radio" name='01'  id='013'><label for='013' class='am-text-danger'>不满意</label></span>
+              </div>
+            </div>
+          </div>
+          <div class="am-panel am-panel-default">
+            <div class="am-panel-bd">
+              <div class='am-text-sm am-cf'><span>4.</span>知识的补充
+              </div>
+              <div class='am-text-sm am-margin-top-sm'>
+                <span class='am-margin-right'><input type="radio" name='01' id='011'><label for='011' class='am-text-success'>非常满意</label></span>
+                <span class='am-margin-right'><input type="radio" name='01'  id='012'><label for='012' class='am-text-warning'>满意</label></span>
+                <span class='am-margin-right'><input type="radio" name='01'  id='013'><label for='013' class='am-text-danger'>不满意</label></span>
+              </div>
+            </div>
+          </div>
+          <div class="am-panel am-panel-default">
+            <div class="am-panel-bd">
+              <div class='am-text-sm am-cf'><span>5.</span>理念的更新
+              </div>
+              <div class='am-text-sm am-margin-top-sm'>
+                <span class='am-margin-right'><input type="radio" name='01' id='011'><label for='011' class='am-text-success'>非常满意</label></span>
+                <span class='am-margin-right'><input type="radio" name='01'  id='012'><label for='012' class='am-text-warning'>满意</label></span>
+                <span class='am-margin-right'><input type="radio" name='01'  id='013'><label for='013' class='am-text-danger'>不满意</label></span>
+              </div>
+            </div>
+          </div>
+          <div class="am-panel am-panel-default">
+            <div class="am-panel-bd">
+              <div class='am-text-sm am-cf'><span>6.</span>工作能力的提高
+              </div>
+              <div class='am-text-sm am-margin-top-sm'>
+                <span class='am-margin-right'><input type="radio" name='01' id='011'><label for='011' class='am-text-success'>非常满意</label></span>
+                <span class='am-margin-right'><input type="radio" name='01'  id='012'><label for='012' class='am-text-warning'>满意</label></span>
+                <span class='am-margin-right'><input type="radio" name='01'  id='013'><label for='013' class='am-text-danger'>不满意</label></span>
+              </div>
+            </div>
+          </div>
+          <div class="am-panel am-panel-default am-form">
+            <div class="am-panel-bd">
+              <div class='am-text-sm am-cf'><span>7.</span>工作思路的启发
+              </div>
+              <div class='am-text-sm am-margin-top-sm'>
+                <span class='am-margin-right'><input type="radio" name='01' id='011'><label for='011' class='am-text-success'>非常满意</label></span>
+                <span class='am-margin-right'><input type="radio" name='01'  id='012'><label for='012' class='am-text-warning'>满意</label></span>
+                <span class='am-margin-right'><input type="radio" name='01'  id='013'><label for='013' class='am-text-danger'>不满意</label></span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <hr/>
+        <!-- 讲师 -->
+        <h6 class='am-margin-bottom-xs am-text-sm'>讲师：</h6>
+        <div class=' am-form'>
+          <div class="am-panel am-panel-default">
+            <div class="am-panel-bd">
+              <div class='am-text-sm am-cf'><span>1.</span>专业水平
+              </div>
+              <div class='am-text-sm am-margin-top-sm'>
+                <span class='am-margin-right'><input type="radio" name='01' id='011'><label for='011' class='am-text-success'>非常满意</label></span>
+                <span class='am-margin-right'><input type="radio" name='01'  id='012'><label for='012' class='am-text-warning'>满意</label></span>
+                <span class='am-margin-right'><input type="radio" name='01'  id='013'><label for='013' class='am-text-danger'>不满意</label></span>
+              </div>
+            </div>
+          </div>
+          <div class="am-panel am-panel-default">
+            <div class="am-panel-bd">
+              <div class='am-text-sm am-cf'><span>2.</span>授课思路
+              </div>
+              <div class='am-text-sm am-margin-top-sm'>
+                <span class='am-margin-right'><input type="radio" name='01' id='011'><label for='011' class='am-text-success'>非常满意</label></span>
+                <span class='am-margin-right'><input type="radio" name='01'  id='012'><label for='012' class='am-text-warning'>满意</label></span>
+                <span class='am-margin-right'><input type="radio" name='01'  id='013'><label for='013' class='am-text-danger'>不满意</label></span>
+              </div>
+            </div>
+          </div>
+          <div class="am-panel am-panel-default">
+            <div class="am-panel-bd">
+              <div class='am-text-sm am-cf'><span>3.</span>备课情况
+              </div>
+              <div class='am-text-sm am-margin-top-sm'>
+                <span class='am-margin-right'><input type="radio" name='01' id='011'><label for='011' class='am-text-success'>非常满意</label></span>
+                <span class='am-margin-right'><input type="radio" name='01'  id='012'><label for='012' class='am-text-warning'>满意</label></span>
+                <span class='am-margin-right'><input type="radio" name='01'  id='013'><label for='013' class='am-text-danger'>不满意</label></span>
+              </div>
+            </div>
+          </div>
+          <div class="am-panel am-panel-default">
+            <div class="am-panel-bd">
+              <div class='am-text-sm am-cf'><span>4.</span>语言表达
+              </div>
+              <div class='am-text-sm am-margin-top-sm'>
+                <span class='am-margin-right'><input type="radio" name='01' id='011'><label for='011' class='am-text-success'>非常满意</label></span>
+                <span class='am-margin-right'><input type="radio" name='01'  id='012'><label for='012' class='am-text-warning'>满意</label></span>
+                <span class='am-margin-right'><input type="radio" name='01'  id='013'><label for='013' class='am-text-danger'>不满意</label></span>
+              </div>
+            </div>
+          </div>
+          <div class="am-panel am-panel-default">
+            <div class="am-panel-bd">
+              <div class='am-text-sm am-cf'><span>5.</span>理论联系实际
+              </div>
+              <div class='am-text-sm am-margin-top-sm'>
+                <span class='am-margin-right'><input type="radio" name='01' id='011'><label for='011' class='am-text-success'>非常满意</label></span>
+                <span class='am-margin-right'><input type="radio" name='01'  id='012'><label for='012' class='am-text-warning'>满意</label></span>
+                <span class='am-margin-right'><input type="radio" name='01'  id='013'><label for='013' class='am-text-danger'>不满意</label></span>
+              </div>
+            </div>
+          </div>
+          <div class="am-panel am-panel-default">
+            <div class="am-panel-bd">
+              <div class='am-text-sm am-cf'><span>6.</span>教学方法运用
+              </div>
+              <div class='am-text-sm am-margin-top-sm'>
+                <span class='am-margin-right'><input type="radio" name='01' id='011'><label for='011' class='am-text-success'>非常满意</label></span>
+                <span class='am-margin-right'><input type="radio" name='01'  id='012'><label for='012' class='am-text-warning'>满意</label></span>
+                <span class='am-margin-right'><input type="radio" name='01'  id='013'><label for='013' class='am-text-danger'>不满意</label></span>
+              </div>
+            </div>
+          </div>
+          <div class="am-panel am-panel-default am-form">
+            <div class="am-panel-bd">
+              <div class='am-text-sm am-cf'><span>7.</span>案例的实用性和可操作性
+              </div>
+              <div class='am-text-sm am-margin-top-sm'>
+                <span class='am-margin-right'><input type="radio" name='01' id='011'><label for='011' class='am-text-success'>非常满意</label></span>
+                <span class='am-margin-right'><input type="radio" name='01'  id='012'><label for='012' class='am-text-warning'>满意</label></span>
+                <span class='am-margin-right'><input type="radio" name='01'  id='013'><label for='013' class='am-text-danger'>不满意</label></span>
+              </div>
+            </div>
+          </div>
+          <div class="am-panel am-panel-default am-form">
+            <div class="am-panel-bd">
+              <div class='am-text-sm am-cf'><span>7.</span>课堂的掌控能力
+              </div>
+              <div class='am-text-sm am-margin-top-sm'>
+                <span class='am-margin-right'><input type="radio" name='01' id='011'><label for='011' class='am-text-success'>非常满意</label></span>
+                <span class='am-margin-right'><input type="radio" name='01'  id='012'><label for='012' class='am-text-warning'>满意</label></span>
+                <span class='am-margin-right'><input type="radio" name='01'  id='013'><label for='013' class='am-text-danger'>不满意</label></span>
+              </div>
+            </div>
+          </div>
+          <div class="am-panel am-panel-default am-form">
+            <div class="am-panel-bd">
+              <div class='am-text-sm am-cf'><span>8.</span>您对讲师还有哪些建议？
+              </div>
+              <div class='am-text-sm am-margin-top-sm'>
+                <div class="am-form-group">
+                  <textarea class="" rows="3" ></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      
+    </div>
+    
+    
+
+  </div>
+  
+</body>
+<script src="assets/js/amazeui.min.js"></script>
+
+</html>
