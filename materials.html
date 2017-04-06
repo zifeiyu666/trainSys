@@ -1,0 +1,219 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <title>trainSys</title>
+  <link rel="icon" type="image/png" href="assets/i/favicon.png">
+  <link rel="stylesheet" href="assets/css/amazeui.min.css">
+
+  <link rel="stylesheet" href="assets/css/common.css">
+</head>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src='assets/js/handlebars.min.js'></script>
+<script src='assets/js/amazeui.widgets.helper.min.js'></script>
+
+<body>
+  <!-- header -->
+  <div class="header am-text-lg am-text-center">
+    培训资料
+  </div>
+
+  
+
+  <div class="materials_wrap">
+    
+    <!-- nav -->
+      <div data-am-widget="tabs"
+       class="am-tabs am-tabs-default"
+        >
+          <ul class="am-tabs-nav am-cf">
+              <li class="am-active"><a href="[data-tab-panel-0]">课程资料</a></li>
+              <li class=""><a href="[data-tab-panel-1]">培训动态</a></li>
+          </ul>
+          <div class="am-tabs-bd">
+              <div data-tab-panel-0 class="am-tab-panel am-active">
+                <!-- sel选择 -->
+                <div class="am-container">
+                  <form action="" class='am-form am-cf am-g'>
+                    <div class="am-form-group am-form-group-sm am-u-sm-6">
+                      <!-- <label for="doc-select-1">下拉多选框</label> -->
+                      <select id="doc-select-1" class="am-form-field">
+                        <option value="option1">培训类型</option>
+                        <option value="option2">负责人</option>
+                        <option value="option3">安全处（科）长</option>
+                        <option value="option4">项目经理</option>
+                      </select>
+                      <span class="am-form-caret"></span>
+                    </div>
+                    <div class="am-form-group am-form-group-sm  am-u-sm-6">
+                      <!-- <label for="doc-select-2">下拉多选框</label> -->
+                      <select id="doc-select-2 am-form-field"  class="am-form-field">
+                        <option value="option1">默认排序</option>
+                        <option value="option2">培训名称</option>
+                        <option value="option3">最新发布</option>
+                      </select>
+                      <span class="am-form-caret"></span>
+                    </div>
+                  </form>
+                </div>
+                
+
+                <!-- list -->
+                <div class="materials-list am-cf">
+                  <div class="am-fl titleIcon">
+                    <img class="am-radius" src="http://s.amazeui.org/media/i/demos/bw-2014-06-19.jpg?imageView/1/w/1000/h/1000/q/80" width="60px"/>
+                  </div>
+                  <div class="am-fl content">
+                    <div class='am-text-sm'>培训名称</div>
+                    <div class='am-text-sm'>培训类型<span class='am-text-xs'>培训类型</span></div>
+                    <div class='am-text-sm'>培训时间<span class='am-text-xs'>2016.10.12-2017.6.10</span></div>
+                  </div>
+                  <div class="am-fr statusIcon">
+                    <img class="am-circle" src="http://s.amazeui.org/media/i/demos/bw-2014-06-19.jpg?imageView/1/w/1000/h/1000/q/80" width="50px"/>
+                  </div>
+                </div>
+                <div class="materials-list am-cf">
+                  <div class="am-fl titleIcon">
+                    <img class="am-radius" src="http://s.amazeui.org/media/i/demos/bw-2014-06-19.jpg?imageView/1/w/1000/h/1000/q/80" width="60px"/>
+                  </div>
+                  <div class="am-fl content">
+                    <div class='am-text-sm'>培训名称</div>
+                    <div class='am-text-sm'>培训类型<span class='am-text-xs'>培训类型</span></div>
+                    <div class='am-text-sm'>培训时间<span class='am-text-xs'>2016.10.12-2017.6.10</span></div>
+                  </div>
+                  <div class="am-fr statusIcon">
+                    <img class="am-circle" src="http://s.amazeui.org/media/i/demos/bw-2014-06-19.jpg?imageView/1/w/1000/h/1000/q/80" width="50px"/>
+                  </div>
+                </div>
+                <div class="materials-list am-cf">
+                  <div class="am-fl titleIcon">
+                    <img class="am-radius" src="http://s.amazeui.org/media/i/demos/bw-2014-06-19.jpg?imageView/1/w/1000/h/1000/q/80" width="60px"/>
+                  </div>
+                  <div class="am-fl content">
+                    <div class='am-text-sm'>培训名称</div>
+                    <div class='am-text-sm'>培训类型<span class='am-text-xs'>培训类型</span></div>
+                    <div class='am-text-sm'>培训时间<span class='am-text-xs'>2016.10.12-2017.6.10</span></div>
+                  </div>
+                  <div class="am-fr statusIcon">
+                    <img class="am-circle" src="http://s.amazeui.org/media/i/demos/bw-2014-06-19.jpg?imageView/1/w/1000/h/1000/q/80" width="50px"/>
+                  </div>
+                </div>
+
+              </div>
+  
+              <div data-tab-panel-1 class="am-tab-panel ">
+                <!-- sel选择 -->
+                <div class="am-container">
+                  <form action="" class='am-form am-cf am-g'>
+                    <div class="am-form-group am-form-group-sm am-u-sm-6">
+                      <!-- <label for="doc-select-1">下拉多选框</label> -->
+                      <select id="doc-select-1" class="am-form-field">
+                        <option value="option1">培训类型</option>
+                        <option value="option2">负责人</option>
+                        <option value="option3">安全处（科）长</option>
+                        <option value="option4">项目经理</option>
+                      </select>
+                      <span class="am-form-caret"></span>
+                    </div>
+                    <div class="am-form-group am-form-group-sm  am-u-sm-6">
+                      <!-- <label for="doc-select-2">下拉多选框</label> -->
+                      <select id="doc-select-2 am-form-field"  class="am-form-field">
+                        <option value="option1">默认排序</option>
+                        <option value="option2">培训名称</option>
+                        <option value="option3">最新发布</option>
+                      </select>
+                      <span class="am-form-caret"></span>
+                    </div>
+                  </form>
+                </div>
+                
+
+                <!-- list -->
+                <div class="materials-list am-cf">
+                  <div class="am-fl titleIcon">
+                    <img class="am-radius" src="http://s.amazeui.org/media/i/demos/bw-2014-06-19.jpg?imageView/1/w/1000/h/1000/q/80" width="60px"/>
+                  </div>
+                  <div class="am-fl content">
+                    <div class='am-text-sm'>培训名称</div>
+                    <div class='am-text-sm'>培训类型<span class='am-text-xs'>培训类型</span></div>
+                    <div class='am-text-sm'>培训时间<span class='am-text-xs'>2016.10.12-2017.6.10</span></div>
+                  </div>
+                  <div class="am-fr statusIcon">
+                    <img class="am-circle" src="http://s.amazeui.org/media/i/demos/bw-2014-06-19.jpg?imageView/1/w/1000/h/1000/q/80" width="50px"/>
+                  </div>
+                </div>
+                <div class="materials-list am-cf">
+                  <div class="am-fl titleIcon">
+                    <img class="am-radius" src="http://s.amazeui.org/media/i/demos/bw-2014-06-19.jpg?imageView/1/w/1000/h/1000/q/80" width="60px"/>
+                  </div>
+                  <div class="am-fl content">
+                    <div class='am-text-sm'>培训名称</div>
+                    <div class='am-text-sm'>培训类型<span class='am-text-xs'>培训类型</span></div>
+                    <div class='am-text-sm'>培训时间<span class='am-text-xs'>2016.10.12-2017.6.10</span></div>
+                  </div>
+                  <div class="am-fr statusIcon">
+                    <img class="am-circle" src="http://s.amazeui.org/media/i/demos/bw-2014-06-19.jpg?imageView/1/w/1000/h/1000/q/80" width="50px"/>
+                  </div>
+                </div>
+                <div class="materials-list am-cf">
+                  <div class="am-fl titleIcon">
+                    <img class="am-radius" src="http://s.amazeui.org/media/i/demos/bw-2014-06-19.jpg?imageView/1/w/1000/h/1000/q/80" width="60px"/>
+                  </div>
+                  <div class="am-fl content">
+                    <div class='am-text-sm'>培训名称</div>
+                    <div class='am-text-sm'>培训类型<span class='am-text-xs'>培训类型</span></div>
+                    <div class='am-text-sm'>培训时间<span class='am-text-xs'>2016.10.12-2017.6.10</span></div>
+                  </div>
+                  <div class="am-fr statusIcon">
+                    <img class="am-circle" src="http://s.amazeui.org/media/i/demos/bw-2014-06-19.jpg?imageView/1/w/1000/h/1000/q/80" width="50px"/>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+
+  <!-- footer -->
+  <div data-am-widget="navbar" class="am-navbar am-cf am-navbar-default "
+      id="foote_tool">
+    <ul class="am-navbar-nav am-cf am-avg-sm-4">
+        <li >
+          <a href="tel:123456789" class="">
+                <span class="am-icon-phone"></span>
+              <span class="am-navbar-label">主页</span>
+          </a>
+        </li>
+        <li data-am-navbar-share>
+          <a href="###" class="">
+                <span class="am-icon-share-square-o"></span>
+              <span class="am-navbar-label">培训</span>
+          </a>
+        </li>
+        <li data-am-navbar-qrcode>
+          <a href="###" class="">
+                <span class="am-icon-qrcode"></span>
+              <span class="am-navbar-label">资料</span>
+          </a>
+        </li>
+        <li >
+          <a href="https://github.com/allmobilize/amazeui" class="">
+                <span class="am-icon-github"></span>
+              <span class="am-navbar-label">我的</span>
+          </a>
+        </li>
+    </ul>
+  </div>
+
+  
+
+
+  
+</body>
+<script src="assets/js/amazeui.min.js"></script>
+
+</html>
