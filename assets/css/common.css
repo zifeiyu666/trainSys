@@ -177,3 +177,20 @@
 .textbook_wrap {
   margin-top: 45px;
 }
+.myTrain_wrap .myTrain-list {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.myTrain_wrap .myTrain-list .titleIcon {
+  height: 60px;
+  margin-right: 10px;
+}
+.myTrain_wrap .myTrain-list .content {
+  line-height: 20px;
+}
+.myTrain_wrap .myTrain-list .statusIcon {
+  height: 50px;
+  margin: 5px 0px;
+}
