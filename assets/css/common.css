@@ -114,6 +114,33 @@
   height: 50px;
   margin: 5px 0px;
 }
+.materials_wrap .notice-list {
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  padding: 10px 0px;
+  margin: 10px 0 ;
+}
+.materials_wrap .notice-list .titleIcon {
+  height: 60px;
+  margin-right: 10px;
+}
+.materials_wrap .notice-list .content {
+  line-height: 20px;
+}
+.materials_wrap .notice-list .statusIcon {
+  height: 50px;
+  margin: 5px 0px;
+}
+.materials_wrap .notice-list h6 {
+  line-height: 25px;
+  padding: 0;
+  margin: 0;
+}
+.materials_wrap .notice-list .col9 {
+  line-height: 20px;
+}
 .my_address {
   margin: 10px;
   box-shadow: 1px 2px 3px #ccc;
