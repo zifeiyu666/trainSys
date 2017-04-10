@@ -221,3 +221,20 @@
   height: 50px;
   margin: 5px 0px;
 }
+.queryResults_wrap .queryResults-list {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.queryResults_wrap .queryResults-list .titleIcon {
+  height: 60px;
+  margin-right: 10px;
+}
+.queryResults_wrap .queryResults-list .content {
+  line-height: 20px;
+}
+.queryResults_wrap .queryResults-list .statusIcon {
+  height: 50px;
+  margin: 5px 0px;
+}
