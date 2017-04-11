@@ -12,11 +12,13 @@
   <link rel="stylesheet" href="../assets/css/amazeui.min.css">
 
   <link rel="stylesheet" href="../assets/css/common.css">
+  <link rel="stylesheet" href="../assets/css/select2.min.css">
 </head>
 
 <script src="../assets/js/jquery.min.js"></script>
 <script src='../assets/js/handlebars.min.js'></script>
 <script src='../assets/js/amazeui.widgets.helper.min.js'></script>
+<script src='../assets/js/select2.full.min.js'></script>
 
 <body>
   <!-- header -->
@@ -26,7 +28,7 @@
 
   
 
-  <div class="userBinding_wrap">
+  <div class="userBinding_wrap mt60">
     
     <!-- nav -->
       <div data-am-widget="tabs"
@@ -40,128 +42,47 @@
           </ul>
           <div class="am-tabs-bd">
               <div data-tab-panel-0 class="am-tab-panel am-active">
-                <table class="am-table table_2">
-                    <tbody>
-                        <tr>
-                            <td>炼化企业：</td>
-                            <td>
-                              <input type="text">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>单位全称：</td>
-                            <td>
-                              <input type="text">
-                            </td>
-                        </tr>
-                        <tr class="am-active">
-                            <td>公司税号：</td>
-                            <td>
-                              <input type="text">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>单位地址：</td>
-                            <td>
-                              <input type="text">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>单位电话：</td>
-                            <td>
-                              <input type="text">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>开户银行：</td>
-                            <td>
-                              <input type="text">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>开户账户：</td>
-                            <td>
-                              <input type="text">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>用户姓名：</td>
-                            <td>
-                              <input type="text">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>用户性别：</td>
-                            <td>
-                              <input type="text">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>您的民族：</td>
-                            <td>
-                              <select name="" id="">
-                                <option value="">汉族</option>
-                                <option value="">朝鲜族</option>
-                                <option value="">藏族</option>
-                                <option value="">满族</option>
-                              </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>身份证号：</td>
-                            <td>
-                              <input type="text">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>培训类型：</td>
-                            <td>
-                              <select name="" id="">
-                                <option value="">负责人</option>
-                                <option value="">。。。</option>
-                                <option value="">。。</option>
-                                <option value="">。。。</option>
-                              </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>培训分类：</td>
-                            <td>
-                              <select name="" id="">
-                                <option value="">初陪</option>
-                                <option value="">。。。</option>
-                                <option value="">。。</option>
-                                <option value="">。。</option>
-                              </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>是否住宿：</td>
-                            <td>
-                              <select name="" id="">
-                                <option value="">是</option>
-                                <option value="">否</option>
-                              </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>手机号码：</td>
-                            <td>
-                              <input type="text">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>验证码：</td>
-                            <td>
-                              <div style='width:100%'>
-                                <input type="text" style='width:50%'>
-                                <button class="am-button-default am-text-xs" style='width:40%'>获取验证码</button>
-                              </div>
-                              
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+
+                <div class="am-panel am-panel-default list">
+                  <div class="am-panel-bd">
+                      <div class='am-text-md formItem am-margin-top-sm'>炼化企业
+                      <select name="" id="sel02"></select>
+                      </div>
+                      <div class='am-text-md formItem am-margin-top-sm'>单位全称<input type="text" class="am-form-field am-radius am-input-sm" placeholder="请输入" /></div>
+                      <div class='am-text-md formItem am-margin-top-sm'>公司税号<input type="text" class="am-form-field am-radius am-input-sm" placeholder="请输入" /></div>
+                      <div class='am-text-md formItem am-margin-top-sm'>单位地址<input type="text" class="am-form-field am-radius am-input-sm" placeholder="请输入" /></div>
+                      <div class='am-text-md formItem am-margin-top-sm'>开户银行<input type="text" class="am-form-field am-radius am-input-sm" placeholder="请输入" /></div>
+                      <div class='am-text-md formItem am-margin-top-sm'>开户账号<input type="text" class="am-form-field am-radius am-input-sm" placeholder="请输入" /></div>
+                      <div class='am-text-md formItem am-margin-top-sm'>用户姓名<input type="text" class="am-form-field am-radius am-input-sm" placeholder="请输入" /></div>
+                      <div class='am-text-md formItem am-margin-top-sm'>用户性别
+                        <select name="" id="selSex">
+                          <option value="man">男</option>
+                          <option value="woman">女</option>
+                        </select>
+                      </div>
+                      <div class='am-text-md formItem am-margin-top-sm'>您的民族
+                        <select name="" id="selSex">
+                          <option value="han">汉</option>
+                          <option value="man">满</option>
+                        </select>
+                      </div>
+                      <div class='am-text-md formItem am-margin-top-sm'>身份证号<input type="text" class="am-form-field am-radius am-input-sm" placeholder="请输入" /></div>
+                      <div class='am-text-md formItem am-margin-top-sm'>培训类型
+                        <select name="" id="selSex">
+                          <option value="">正式</option>
+                          <option value="">非正式</option>
+                        </select>
+                      </div>
+                      <div class='am-text-md formItem am-margin-top-sm'>培训分类<input type="text" class="am-form-field am-radius am-input-sm" placeholder="请输入" /></div>
+                      <div class='am-text-md formItem am-margin-top-sm'>是否住宿<input type="text" class="am-form-field am-radius am-input-sm" placeholder="请输入" /></div>
+                      <div class='am-text-md formItem am-margin-top-sm'>手机号码<input type="text" class="am-form-field am-radius am-input-sm" placeholder="请输入" /></div>
+                      <div class='am-text-md formItem am-margin-top-sm'>验证码<input type="text" class="am-form-field am-radius am-input-sm" placeholder="请输入" /><button class="am-btn am-btn-default am-btn-sm am-margin-top-sm">获取验证码</button></div>
+                      
+                  </div>
+
+                </div>
+
+                <button class="am-btn am-btn-primary am-btn-block am-margin-top-lg am-margin-bottom-lg">(倒计时)确认以上信息准确无误并报道</button>
 
               </div>
   
@@ -219,5 +140,28 @@
   
 </body>
 <script src="../assets/js/amazeui.min.js"></script>
-
+<script>
+   $("#sel02").select2({
+      placeholder: 'Select an option',
+      width:200,
+      ajax: {
+        url: "data.json",
+        dataType: 'json',
+        delay: 250,
+        data: function (params) {
+          return {
+            q: params.term,
+          };
+        },
+        processResults: function (data) {
+          return {
+            results: data
+          };
+        },
+        cache: true
+      },
+      escapeMarkup: function (markup) { return markup; }, 
+      minimumInputLength: 1,
+  });
+</script>
 </html>

@@ -1,8 +1,47 @@
+body {
+  background: #f2f2f2;
+}
+.am-tabs-bd {
+  border: none !important;
+}
+.am-tab-panel {
+  padding: 10px 0 !important;
+}
+.am-panel {
+  border: none;
+  box-shadow: 1px 1px 1px #ccc;
+}
+.am-text-sm {
+  color: #1a1a1a;
+}
+.am-tabs-d2 .am-tabs-nav {
+  background: #ddd;
+}
+.select2 {
+  width: 100% !important;
+}
+.select2-selection {
+  height: 32px !important;
+  line-height: 32px !important;
+  border: 1px solid #ccc !important;
+  border-radius: 2px !important;
+}
+h6 {
+  font-size: 18px;
+  font-weight: normal;
+}
+hr {
+  margin: 5px 0px !important;
+  padding: 0 !important;
+}
+.col-blue {
+  color: #0e90d2;
+}
 .col9 {
   color: #999;
 }
 .col6 {
-  color: 666;
+  color: #666;
 }
 .mt60 {
   margin-top: 45px;
@@ -14,16 +53,19 @@
   line-height: 40px;
   top: 0;
   left: 0;
-  box-shadow: 1px 2px 3px #999;
+  box-shadow: 0px 1px 2px #999;
   color: #fff;
   background-color: #0e90d2;
   z-index: 1000;
 }
 .index-nav {
   margin-bottom: 20px;
+  padding-bottom: 10px;
+  background: #fff;
+  box-shadow: 1px 1px 1px #ccc;
 }
 .index-nav img {
-  width: 50px;
+  width: 60px;
 }
 .index-nav li {
   position: relative;
@@ -34,8 +76,9 @@
 .common_list {
   margin: 10px;
   padding: 10px;
-  border: 1px solid #ccc;
   box-sizing: border-box;
+  background: #fff;
+  box-shadow: 1px 1px 1px #ccc;
 }
 .common_list .titleIcon {
   height: 60px;
@@ -51,6 +94,9 @@
 .left-btn {
   margin-left: 10px;
 }
+.shadow {
+  box-shadow: 1px 1px 1px #ccc;
+}
 .index_wrap {
   margin-top: 45px;
 }
@@ -60,8 +106,9 @@
 .index_wrap .index-list {
   margin: 10px;
   padding: 10px;
-  border: 1px solid #ccc;
   box-sizing: border-box;
+  background: #fff;
+  box-shadow: 1px 1px 1px #ccc;
 }
 .index_wrap .index-list .titleIcon {
   height: 60px;
@@ -75,13 +122,14 @@
   margin: 5px 0px;
 }
 .train_wrap {
-  margin-top: 45px;
+  margin-top: 60px;
 }
 .train_wrap .train-list {
   margin: 10px;
   padding: 10px;
-  border: 1px solid #ccc;
   box-sizing: border-box;
+  background: #fff;
+  box-shadow: 1px 1px 1px #ccc;
 }
 .train_wrap .train-list .titleIcon {
   height: 60px;
@@ -100,8 +148,9 @@
 .materials_wrap .materials-list {
   margin: 10px;
   padding: 10px;
-  border: 1px solid #ccc;
   box-sizing: border-box;
+  background: #fff;
+  box-shadow: 1px 1px 1px #ccc;
 }
 .materials_wrap .materials-list .titleIcon {
   height: 60px;
@@ -118,9 +167,8 @@
   margin: 10px;
   padding: 10px;
   box-sizing: border-box;
-  border: 1px solid #ccc;
-  padding: 10px 0px;
-  margin: 10px 0 ;
+  background: #fff;
+  box-shadow: 1px 1px 1px #ccc;
 }
 .materials_wrap .notice-list .titleIcon {
   height: 60px;
@@ -137,15 +185,26 @@
   line-height: 25px;
   padding: 0;
   margin: 0;
+  font-weight: normal;
+}
+.materials_wrap .notice-list img {
+  width: 80%;
+}
+.materials_wrap .notice-list .am-u-sm-3 {
+  padding-left: 0;
+  padding-right: 0;
+}
+.materials_wrap .notice-list .am-u-sm-9 {
+  padding-left: 0;
 }
 .materials_wrap .notice-list .col9 {
   line-height: 20px;
 }
 .my_address {
   margin: 10px;
-  box-shadow: 1px 2px 3px #ccc;
+  box-shadow: 1px 1px 1px #ccc;
   padding: 10px;
-  background: #eee;
+  background: #fff;
 }
 .am-tabs-d2 {
   margin: 0;
@@ -178,7 +237,8 @@
   margin: 10px;
   padding: 10px;
   box-sizing: border-box;
-  border: 1px solid #ccc;
+  background: #fff;
+  box-shadow: 1px 1px 1px #ccc;
   padding: 10px 0px;
   margin: 10px 0 ;
 }
@@ -207,8 +267,9 @@
 .myTrain_wrap .myTrain-list {
   margin: 10px;
   padding: 10px;
-  border: 1px solid #ccc;
   box-sizing: border-box;
+  background: #fff;
+  box-shadow: 1px 1px 1px #ccc;
 }
 .myTrain_wrap .myTrain-list .titleIcon {
   height: 60px;
@@ -224,8 +285,9 @@
 .queryResults_wrap .queryResults-list {
   margin: 10px;
   padding: 10px;
-  border: 1px solid #ccc;
   box-sizing: border-box;
+  background: #fff;
+  box-shadow: 1px 1px 1px #ccc;
 }
 .queryResults_wrap .queryResults-list .titleIcon {
   height: 60px;
@@ -237,4 +299,10 @@
 .queryResults_wrap .queryResults-list .statusIcon {
   height: 50px;
   margin: 5px 0px;
+}
+.woyaobaodao_wrap .am-container .list div span {
+  color: #666;
+}
+.woyaobaodao_wrap .am-container .formItem {
+  margin: 10px 0;
 }
